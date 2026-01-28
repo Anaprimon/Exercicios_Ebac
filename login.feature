@@ -1,14 +1,10 @@
 #language:pt 
 
-Cenário: Autenticação Válida
-Quando eu Digitar o usuario "kaio@ebac.com.br"
-E a senha "akkakksm@123"
-Então deve exibir uma mensagem de alerta "Usuario ou senha invalidos"
+Cenário: Cor, tamanho e quantidade foram selecionados
+Quando selecionar cor, tamanho, quantidade e clicar no botão "comprar"
+Então deve ser direcionado para a página de pagamento
 
-Esquema do Cenário: Autenticar multiplos usuário
-Quando eu digitar o <usuario>
-E a <senha>
-Então deve exibir a <mensagem> de sucesso
-Exemplos:
-| usuario           |  senha     | mensagem 
-| kaio@ebac.com.br  | teste@123  | "Olá kaio
+Cenário: Compra falha por falta de informações
+Quando não selecionar um dos 3 requisitos (cor, tamanho e quantidade) e clicar no botão "comprar"
+Então o sistema deve mostrar uma mensagem de alerta, informando qual requisito não foi atendido
+
