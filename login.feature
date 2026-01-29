@@ -18,3 +18,8 @@ Cenário: seleção de cor, tamanho e quantidade do produto
 Quando escolho a cor "Preto", o tamanho "M" e a quantidade "10"
 E clico em "Adicionar ao carrinho"
 Então o produto deve ser adicionado ao carrinho com as especificações escolhidas
+
+Cenário: cadastro com campos vazios
+Quando deixar de preencher algum campo obrigatório marcado com asterisco
+E clicar em "Finalizar Cadastro"
+Então o sistema deve exivir uma mensagem de erro "Por favor, preencha todos os campos obrigatórios"
