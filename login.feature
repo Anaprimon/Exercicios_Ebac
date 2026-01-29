@@ -26,7 +26,7 @@ Então o sistema deve exivir uma mensagem de erro "Por favor, preencha todos os 
 
 
 Esquema do Cenário: Fazer login com múltiplos conjuntos de credenciais
-Quando preencho o campo email <email>  e senha <senha> e clico em "login"
+Quando preencho o campo email <email>, senha <senha> e clico em "login"
 Então o sistema deve exibir a mensagem <mensagem>
 
 Exemplos:
