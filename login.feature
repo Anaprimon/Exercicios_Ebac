@@ -25,7 +25,7 @@ E clicar em "Finalizar Cadastro"
 Então o sistema deve exivir uma mensagem de erro "Por favor, preencha todos os campos obrigatórios"
 
 Cenário: configurar produto
-Quando configurar meu produto "camisa laranja xs", na quantidade 2 e inserir no carrinho
+Quando configurar meu produto "camisa laranja xs", na quantidade "2" e inserir no carrinho
 Então o sistema deve exibir a mensagem "produto salvo"
 
 
