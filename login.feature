@@ -24,6 +24,11 @@ Quando deixar de preencher algum campo obrigatório marcado com asterisco
 E clicar em "Finalizar Cadastro"
 Então o sistema deve exivir uma mensagem de erro "Por favor, preencha todos os campos obrigatórios"
 
+Cenário: configurar produto
+Quando configurar meu produto "camisa laranja xs", na quantidade 2 e inserir no carrinho
+Então o sistema deve exibir a mensagem "produto salvo"
+
+
 
 Esquema do Cenário: Fazer login com múltiplos conjuntos de credenciais
 Quando preencho o campo email <email>, senha <senha> e clico em "login"
