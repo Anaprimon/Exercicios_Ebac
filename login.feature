@@ -29,7 +29,6 @@ Quando configurar meu produto "camisa laranja xs", na quantidade "2" e inserir n
 Então o sistema deve exibir a mensagem "produto salvo"
 
 
-
 Esquema do Cenário: Fazer login com múltiplos conjuntos de credenciais
 Quando preencho o campo email <email>, senha <senha> e clico em "login"
 Então o sistema deve exibir a mensagem <mensagem>
@@ -40,3 +39,22 @@ Exemplos:
 | teste2025@email.com   | Senhaerrada666   | Dados incorretos: Verifique as informações fornecidas
 |                       | SenhaSegura345   | Verfique o email
 | teste2026@email.com   |                  | Verifique a senha
+
+
+Esquema do Cenário: cadastra multiplos dados do usuário
+Quando eu digitar <nome>, <sobrenome>, <endereço>, <cidade>, <país>, <cep>, <telefone> e <endereço de email>
+Então deve exibir <mensagem> 
+
+Exemplos:
+| nome | sobrenome | endereço                  | cidade   | país     |  cep    |  telefone   |  endereço de email     | mensagem                             |
+|Jose  | Ernesto   | rua Andrezino Arantes, 30 | Lisboa   | Portugal | 1813066 | 11999185061 | jose_ernesto@yahoo.com |compra finalizada com sucesso         |
+|Maria |das Dores  | Rua Bonita, 45            | Curitiba | Brasil   | 08945   | 13996666996 | mariadores@email.com   | Formato de cep inválido              |
+|João  | Silva     | Rua Feliz, 67             | Guará    | Brasil   |09770233 | 51oo555     | joaosilva@email.com    | Formato de telefone inválido         |
+|Ana   | Souza     | Rua da Saudade, 900       | Maceió   | Brasil   |04266030 | 35997788998 | ana.email.com          | Formato de email inválido            |
+|Bruno | Sales     |                           |          |          |05874999 | 11987654321 | brunosales@email.com   | Todos os campos devem ser preenchidos|
+
+
+Cenário: cadastra multiplos dados do usuário
+Quando eu digitar o nome "José", o sobrenome "Ernesto", o endereço "Rua Andrezinho Arantes, 30", a cidade "Lisboa", o país "Portugal", o cep "1813066, o telefone "11999185061
+E o endereço de email "jose_ernesto@yahoo.com
+Então o sistema deve exibir uma mensagem "Compra finalizada com sucesso"
