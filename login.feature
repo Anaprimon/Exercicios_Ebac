@@ -29,18 +29,6 @@ Quando configurar meu produto "camisa laranja xs", na quantidade "2" e inserir n
 Então o sistema deve exibir a mensagem "produto salvo"
 
 
-Esquema do Cenário: Fazer login com múltiplos conjuntos de credenciais
-Quando preencho o campo email <email>, senha <senha> e clico em "login"
-Então o sistema deve exibir a mensagem <mensagem>
-
-Exemplos:
-| email                 | senha            | mensagem
-| teste2024@email.com   | SenhaSegura123   | Seja bem vindo!
-| teste2025@email.com   | Senhaerrada666   | Dados incorretos: Verifique as informações fornecidas
-|                       | SenhaSegura345   | Verfique o email
-| teste2026@email.com   |                  | Verifique a senha
-
-
 Esquema do Cenário: cadastra multiplos dados do usuário
 Quando eu digitar <nome>, <sobrenome>, <endereço>, <cidade>, <país>, <cep>, <telefone> e <endereço de email>
 Então deve exibir <mensagem> 
