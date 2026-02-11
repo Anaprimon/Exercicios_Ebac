@@ -46,3 +46,16 @@ Cenário: cadastra multiplos dados do usuário
 Quando eu digitar o nome "José", o sobrenome "Ernesto", o endereço "Rua Andrezinho Arantes, 30", a cidade "Lisboa", o país "Portugal", o cep "1813066, o telefone "11999185061
 E o endereço de email "jose_ernesto@yahoo.com
 Então o sistema deve exibir uma mensagem "Compra finalizada com sucesso"
+
+
+Cenário: Limpar as seleções e retornar ao estado original
+Quando seleciono o tamanho "P", a cor "Azul", a quantidade "3" e clico no botão "limpar"
+Então o tamanho, a cor e a quantidade devem voltar ao estado original
+
+
+Cenário: Limpar as seleções e retornar ao estado original
+Quando seleciono o tamanho "P", a cor "Azul", a quantidade "3" 
+E clico no botão "limpar"
+Então o tamanho, a cor e a quantidade devem voltar ao estado original
+
+
