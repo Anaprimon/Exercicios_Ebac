@@ -58,4 +58,9 @@ Quando seleciono o tamanho "P", a cor "Azul", a quantidade "3"
 E clico no botão "limpar"
 Então o tamanho, a cor e a quantidade devem voltar ao estado original
 
+Cenário: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos
+Quando eu preencho todos os campos obrigatórios marcados com asterisco, informo um e-mail válido "cliente@ebac.com" e clico no botão "Cadastrar"
+Então o sistema deve realizar o cadastro com sucesso
+
+
 
