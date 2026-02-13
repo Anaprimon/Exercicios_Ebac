@@ -64,3 +64,32 @@ Então o sistema deve realizar o cadastro com sucesso
 
 
 
+Funcionalidade: login do sitema
+Como cliente da EBAC-SHOP
+Quero fazer o login (autenticação) na plataforma
+Para visualizar meus pedidos
+
+Contexto: Dado que eu acesse a pagina da autenticação da EBAC-SHOP
+
+Cenário: autenticação válida
+Quando eu digitar o usuário e senha válidos
+Então deve exibir a mensagem de boas vindas "Seja bem vindo!"
+
+Cenário: senha inválida
+Quando eu digitar o usuario ou senha inválidos
+Então deve exibir a mensagem de alerta "Usuário ou senha inválidos"
+
+Esquema do Cenário: autenticar multiplos usuario
+Quando eu digitar o <usuario>
+E a <senha>
+Então deve exibir a <mensagem>
+
+| usuario                | senha        | mensagem                     |
+| jose_ernesto@yahoo.com | Jose@Ernesto | Olá, Jose Ernesto            |
+| mariadores@email.com   | maria123     | senha ou usuario inexistente |
+| joaosilva@email.com    | Joao_silva   | Olá, João Silva              |
+| ana.email.com          | Ana_123      | usuario inexistente          |
+| brunosales@email.com   |              | senha invalida               |
+
+
+
