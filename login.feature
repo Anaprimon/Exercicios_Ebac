@@ -92,4 +92,17 @@ Então deve exibir a <mensagem>
 | brunosales@email.com   |              | senha invalida               |
 
 
+Esquema do Cenário: Validação de cadastro
+Quando eu preencher todos os <campos>
+E clicar em finalizar compra
+Então deve exibir uma <mensagem>
+
+Exemplos:
+|campos                          |   mensagem                      |
+|todos preenchidos corretamente  |"Compra finalizada com sucesso"  |
+|e-mail fora do formato          |"E-mail inválido"                |
+|nenhum campo preenchido         |"Preencha os campos obrigatórios"|
+|apenas alguns campos preenchidos|"Preencha os campos obrigatórios"|
+
+
 
