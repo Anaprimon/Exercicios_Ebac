@@ -1,6 +1,6 @@
 #language: pt
 
-Fuincionalidade: Configurar produto
+Funcionalidade: Configurar produto
 
 Como cliente da Ebac-shop
 Quero configurar meu produto
