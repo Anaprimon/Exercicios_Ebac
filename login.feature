@@ -1,6 +1,6 @@
 #language: pt
 
-Funcionalidade: Configurar produto
+Funcionalidade: Configurar produto conforme tamanho, cor e quantidade
 
 Como cliente da EBAC-SHOP
 Quero configurar meu produto de acordo com meu tamanho e gosto
