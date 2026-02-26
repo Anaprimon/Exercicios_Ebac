@@ -1,31 +1,31 @@
 #language: pt
 
-Funcionalidade: Configurar produto
+Funcionalidade: Configurar produto "tamanho, cor e quantidade"
+Como cliente da EBAC-SHOP
+Quero configurar meu produto de acordo com meu tamanho e gosto
+E escolher a quantidade
+Para depois inserir no carrinho
 
-Como cliente da Ebac-shop
-Quero configurar meu produto
-Para finalizar minha compra
+Cenário: Seleção válida de produto
+Dado que eu acessei a página de um produto na EBAC-SHOP
+Quando eu seleciono a cor "Azul", o tamanho "G" e a quantidade "5"
+E clico no botão "Comprar"
+Então o sistema deve permitir a inserção do item no carrinho.
 
-Contexto: Dado que estou na tela do produto
+Cenário: Tentativa de compra sem selecionar campos obrigatórios
+Dado que estou na página do produto
+Quando eu tento adicionar ao carrinho sem selecionar cor ou tamanho
+Então o sistema deve exibir um alerta informando que os campos são obrigatórios.
 
-            
-Esquema do Cenário: Validar obrigatoriamente as seleções antes de inserir no carrinho
-Dado que o usuário possui cadastro válido
-Quando eu seleciono a cor <cor>, tamanho <tamanho> e quantidade <quantidade>
-Então o sistema deve exibir o <resultado>
+Cenário: Limite de quantidade por venda
+Dado que escolhi a cor e o tamanho
+Quando eu seleciono a quantidade "11"
+Então o sistema deve exibir uma mensagem de erro e não permitir a inclusão no carrinho.
 
-Exemplos:
-| cor  | tamanho | quantidade | resultado                                  |
-| Azul | M       | 2          | permitir a inserção do produto no carrinho |
-|      | M       | 2          | exibir mensagem de cor obrigatória         |
-| Azul |         | 2          | exibir mensagem de tamanho obrigatório     |
-| Azul | M       | 1          | exibir mensagem de quantidade obrigatória  |
-
-
-
-Cenario: Deve permitir apenas 10 produtos por venda
-Quando eu seleciono a cor "Preto", informo a quantidade "11"
-E clico no botão "Adicionar ao carrinho"
+Cenário: Limpar configurações
+Dado que eu já selecionei cor, tamanho e quantidade
+Quando eu clico no botão "Limpar"
+Então todas as seleções devem voltar ao estado original (vazio/padrão)."
 Então o sistema deve exibir mensagem informando que o limite máximo é "10" produtos por venda
 
 
