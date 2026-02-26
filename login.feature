@@ -32,3 +32,18 @@ Então todas as seleções devem voltar ao estado original (vazio/padrão).
  Dado que estou feliz
  Quando comprar meu produto
  Então ficarei mais feliz ainda
+
+
+Esquema do Cenário: Validar campos obrigatórios e formato de e-mail
+Dado que estou na tela de cadastro de checkout
+Quando eu preencho os campos <Nome>, <E-mail>, <Endereço> e clico em "Cadastrar"
+Então o sistema deve exibir a <Mensagem> correspondente
+
+Exemplos:
+| Nome         | E-mail             | Endereço    | Mensagem                                        |
+| "João Silva" | "joao@teste.com"   | "Rua A, 10" | "Cadastro realizado com sucesso"                |
+| "Samuel"     | "samuel@teste.com" | "Rua A, 32" | "Cadastro realizado com "sucesso"               |
+| "izabel"     | "izabel@teste.com" | "Rua A, 53" | "Cadastro realizado com sucesso"                |
+| " (vazio)"   | "maria@teste.com"  | "Rua B, 20" | "Alerta: Preencha todos os campos obrigatórios" |
+| Carlos A.    | "carlos@erro"      | "Rua C, 30" | "E-mail com formato inválido"                   |
+| Ana Souza    | "(vazio)"          | "(vazio)"   | "Alerta: Preencha todos os campos obrigatórios" |
