@@ -26,7 +26,7 @@ Então o sistema deve exibir uma mensagem de erro e não permitir a inclusão no
 Cenário: Limpar configurações
 Dado que eu já selecionei cor, tamanho e quantidade
 Quando eu clico no botão "Limpar"
-Então todas as seleções devem voltar ao estado original (vazio/padrão)."
+Então todas as seleções devem voltar ao estado original (vazio/padrão).
 
  Cenário: Configuração de produto
  Dado que estou feliz
