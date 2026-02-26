@@ -27,11 +27,8 @@ Cenário: Limpar configurações
 Dado que eu já selecionei cor, tamanho e quantidade
 Quando eu clico no botão "Limpar"
 Então todas as seleções devem voltar ao estado original (vazio/padrão)."
-Então o sistema deve exibir mensagem informando que o limite máximo é "10" produtos por venda
 
-
-Cenário: Ao clicar no botão "limpar" deve voltar ao estado original
-Dado que selecionei cor "Azul", tamanho "M" e quantidade "3"
-Quando eu clicar no botão "Limpar"
-Então o sistema deve retornar todos os campos ao estado original
-E nenhum campo deve permanecer selecionado
+ Cenário: Configuração de produto
+ Dado que estou feliz
+ Quando comprar meu produto
+ Então ficarei mais feliz ainda
