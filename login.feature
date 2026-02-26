@@ -3,8 +3,7 @@
 Funcionalidade: Configurar produto conforme tamanho, cor e quantidade
 
 Como cliente da EBAC-SHOP
-Quero configurar meu produto de acordo com meu tamanho e gosto
-E escolher a quantidade
+Quero configurar meu produto de acordo com meu tamanho, gosto e  escolher a quantidade
 Para depois inserir no carrinho
 
 Cenário: Seleção válida de produto
