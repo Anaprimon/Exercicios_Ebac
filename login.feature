@@ -26,3 +26,16 @@ Exemplos:
 | @ebac.com       |
 | cliente@.com    |
 
+
+Esquema do Cenário: Validação de campos obrigatórios
+Quando deixo de prencher Nome "<nome>", Sobrenome "<sobrenome>", Email "<email>" ou Endereço "<endereco>"
+E clico em "Cadastrar"
+Então o sistema deve exibir a mensagem "<mensagem>"
+
+Exemplos:
+| nome  | sobrenome | email           | endereco     | mensagem                        |
+|       | Silva     | maria@email.com | Rua A        | O campo Nome é obrigatório      |
+| Maria | Silva     |                 | Rua A        | O campo Email é obrigatório     |
+| Maria |           | maria@email.com | Rua A        | O campo Sobrenome é obrigatório |
+| Maria | Silva     | maria@email.com |              | O campo Endereço é obrigatório  |
+
