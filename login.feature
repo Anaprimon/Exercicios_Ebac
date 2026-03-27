@@ -39,3 +39,9 @@ Exemplos:
 | Maria |           | maria@email.com | Rua A        | O campo Sobrenome é obrigatório |
 | Maria | Silva     | maria@email.com |              | O campo Endereço é obrigatório  |
 
+
+Cenário: Finalizar compra com dados válidos
+Quando preencher os dados obrigatórios de faturamento, selecionar uma forma de entrega e uma forma de pagamento válida
+E clicar no botão "Finalizar compra"
+Então o sistema deve concluir o pedido com sucesso, exibindo uma mensagem de confirmação
+
