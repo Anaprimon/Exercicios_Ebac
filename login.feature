@@ -40,6 +40,23 @@ Exemplos:
 | Maria | Silva     | maria@email.com |              | O campo Endereço é obrigatório  |
 
 
+
+Esquema do Cenário: Campo obrigatório
+Quando eu selecionar <cor>, <quantidade> e <tamanho> do item,
+E clicar no botão "Adicionar ao carrinho"
+Então o sistema deve exibir uma <mensagem> de alerta
+
+Exemplos:
+| cor   | tamanho   | quantidade  | mensagem                              |
+| azul  |    M      |    2        | "Produto adicionado com sucesso"      |
+|       |    G      |    1        | "Selecione a cor para continuar"      |
+| verde |           |    4        | "Selecione o tamanho para continuar"  |
+| rosa  |    P      |             | Selecione a quantidade para continuar"|
+
+
+
+
+
 Cenário: Finalizar compra com dados válidos
 Quando preencher os dados obrigatórios de faturamento, selecionar uma forma de entrega e uma forma de pagamento válida
 E clicar no botão "Finalizar compra"
