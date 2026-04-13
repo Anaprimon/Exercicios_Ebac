@@ -28,16 +28,20 @@ Exemplos:
 
 
 Esquema do Cenário: Validação de campos obrigatórios
-Quando deixo de prencher Nome "<nome>", Sobrenome "<sobrenome>", Email "<email>" ou Endereço "<endereco>"
+Quando prencher Nome <nome>, Sobrenome <sobrenome>, Endereço <endereco>,Cidade <cidade>, CEP <cep> e Telefone <telefone>
 E clico em "Cadastrar"
 Então o sistema deve exibir a mensagem "<mensagem>"
 
 Exemplos:
-| nome  | sobrenome | email           | endereco     | mensagem                        |
-|       | Silva     | maria@email.com | Rua A        | O campo Nome é obrigatório      |
-| Maria | Silva     |                 | Rua A        | O campo Email é obrigatório     |
-| Maria |           | maria@email.com | Rua A        | O campo Sobrenome é obrigatório |
-| Maria | Silva     | maria@email.com |              | O campo Endereço é obrigatório  |
+| nome  | sobrenome | endereco   | Cidade    | cep       | telefone     |mensagem                          |
+|       | Silva     |  Rua A     | São Paulo | 09999-000 |(11)5555-6666 |"O campo Nome é obrigatório"      |
+| Maria |           |  Rua A     | São Paulo | 09999-000 |(11)5555-6666 |"O campo Sobrenome é obrigatório" |
+| Maria | Silva     |            | São Paulo | 09999-000 |(11)5555-6666 |"O campo Endedeço é obrigatório"  |
+| Maria | Silva     |  Rua A     |           | 09999-000 |(11)5555-6666 |"O campo Cidade é obrigatório"    |
+| Maria | Silva     |  Rua A     | São Paulo |           |(11)5555-6666 |"O campo CEP é obrigatório"       |
+| Maria | Silva     |  Rua A     | São Paulo |09999-000  |              |"O campo Telefone é obrigatório"  |
+| Maria | Silva     |  Rua A     | São Paulo |09999=000  |(11)5555-6666 |"Cadastro realizado com sucesso"  |
+
 
 
 
