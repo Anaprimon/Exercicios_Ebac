@@ -66,3 +66,20 @@ Quando preencher os dados obrigatórios de faturamento, selecionar uma forma de 
 E clicar no botão "Finalizar compra"
 Então o sistema deve concluir o pedido com sucesso, exibindo uma mensagem de confirmação
 
+
+Cenário: Cadastrar cliente com todos os dados obrigatórios preenchidos
+Quando o cliente preencher todos os campos obrigatórios marcados com asterisco, informar um e-mail válido e clicar no botão de cadastrar
+Então o cadastro deve ser concluído com sucesso
+
+
+Esquema do Cenário: Validar limite de quantidade de produtos por venda
+Quando o cliente selecinar uma cor válida, um tamanho válido, a quantidade <quantidade> e clicar no botão de adicionar ao carrinho
+Então o sistema deve apresentar o resultado <resultado>
+
+Exemplos:
+| quantidade | resultado                                      |
+| 1          | Produto adicionado ao carrinho                 |
+| 10         | Produto adicionado ao carrinho                 |
+| 11         | Quantidade máxima permitida é de 10 produtos   |
+| 0          | A quantidade deve ser obrigatória e válida     |
+
