@@ -21,11 +21,11 @@ Então o sistema deve voltar ao estado original
 
 
 Esquema do Cenário: Limite máximo de 10 produtos por venda
-Quando eu selecionar a <cor> o <tamanho> e atribuir a <quantidade>
+Quando eu selecionar um produto e atribuir a <quantidade>
 E clicar no botão "Comprar"
 Então o portal deve exibir a <mensagem>
 Exemplos:
-| cor      | tamanho | quantidade | mensagem                         |
-|  Orange  |   M     |    09      | "Produto adicionado ao carrinho" |
-|  Orange  |   M     |    10      | "Produto adicionado ao carrinho" |
-|  Orange  |   M     |    11      | "Quantidade máxima excedida"     |
+| quantidade | mensagem                         |
+|    09      | "Produto adicionado ao carrinho" |
+|    10      | "Produto adicionado ao carrinho" |
+|    11      | "Quantidade máxima excedida"     |
