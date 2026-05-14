@@ -29,3 +29,10 @@ Exemplos:
 |    09      | "Produto adicionado ao carrinho" |
 |    10      | "Produto adicionado ao carrinho" |
 |    11      | "Quantidade máxima excedida"     |
+
+
+
+Cenário: Configuração válida do produto
+Quando eu selecionar a cor, o tamanho e a quantidade desejada do produto
+E clicar no botão "Comprar"
+Então o produto deve ser adicionado ao carrinho
