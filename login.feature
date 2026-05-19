@@ -83,3 +83,9 @@ Exemplos:
 | 11         | Quantidade máxima permitida é de 10 produtos   |
 | 0          | A quantidade deve ser obrigatória e válida     |
 
+
+Cenário: Configurar produto com sucesso
+Quando selecionar a cor "Azul", o tamanho "M", a quantidade "2"
+E clicar no botão "Adicionar ao carrinho"
+Então o produto deve ser adicionado ao carrinho
+
