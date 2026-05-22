@@ -36,3 +36,9 @@ Cenário: Configuração válida do produto
 Quando eu selecionar a cor, o tamanho e a quantidade desejada do produto
 E clicar no botão "Comprar"
 Então o produto deve ser adicionado ao carrinho
+
+
+Cenário: Botão limpar deve retornar ao estado original
+Dado que o cliente esteja na página de configuração do produto
+Quando selecionar a cor "Blue", o tamanho "M", a quantidade "2" e clicar no botão "Limpar"
+Então as configurtações devem voltar ao estado original 
