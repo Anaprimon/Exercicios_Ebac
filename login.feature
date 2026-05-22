@@ -89,3 +89,30 @@ Quando selecionar a cor "Azul", o tamanho "M", a quantidade "2"
 E clicar no botão "Adicionar ao carrinho"
 Então o produto deve ser adicionado ao carrinho
 
+
+
+Funcionalidade: Login na Plataforma
+
+Como cliente da EBAC-SHOP
+Quero fazer o login (autenticação) na plataforma  
+Para visualizar meus pedidos
+
+Contexto: 
+Dado que o cliente esteja na pagina de autenticação da EBAC-SHOP
+
+Cenário: Login válido
+Quando inserir username e password corretos
+Então deve ser direcionado para tela de checkout
+
+Cenário: Login com senha incorreta
+Quando inserir username correto e password incorreto
+Então deve ser exibido a mensagem "Usuário ou senha inválidos"
+
+Cenário: Login com usuário incorreto
+Quando inserir username incorreto epassword correto
+Então de ser exibido a mensagem "Usuário ou senha inválidos"
+
+Cenário: Login com todos os campos inválidos
+Quando inserir username e password incorretos
+Então deve ser exibido a mensagem "Usuário ou senha inválidos"
+
