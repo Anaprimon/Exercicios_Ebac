@@ -17,5 +17,14 @@ Quando deixo de preencher algum campo obrigatório marcado com asterisco
 Então o sistema deve exibir a mensagem "Peencha todos os campos obrigatórios"
 
 
+Esquema do Cenário: Cadastro com dados válidos
+Quando eu inserir o <nome>, <sobrenome>, <Pais>, <endereco>, <cidade>, <cep>, <telefone> e <email>
+Então o cadastro deve ser criado com sucesso exibindo a mensagem "Seja bem-vindo(a)"
+
+Exemplos:
+| nome     | sobrenome | Pais     | endereco               | cidade    | cep       | telefone        | email                   |
+| Carinha  | da Silva  | Brasil   | Rua das Flores, 123    | São Paulo | 12345-678 | (11) 98765-4321 | carinha.silva@gmail.com |
+| Link     | Rinku     | Japão    | Rua dos Pinheiros, 456 | Tóquio    | 98765-432 | (81) 91234-5678 | linkezelda@hotmail.com  |
+| Theodoro | Fonseca   | Portugal | Rua do Sol, 789        | Lisboa    | 54321-987 | (21) 99876-5432 | f.theo@gmail.com        |
 
 
