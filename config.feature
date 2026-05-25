@@ -43,6 +43,10 @@ Dado que o cliente esteja na página de configuração do produto
 Quando selecionar a cor "Blue", o tamanho "M", a quantidade "2" e clicar no botão "Limpar"
 Então as configurtações devem voltar ao estado original 
 
+Cenário: Não configurar o produto
+Quando eu não escolher o tamanho, a cor ou a quantidade do produto
+E clicar na opção Comprar
+Então deve exibir uma mensagem de alerta "Selecione as configurações do produto para continuar"
 
 Cenário: Configurar o produto
 Quando eu escolher o tamanho, a cor e a quantidade do produto dentro limite de até 10 unidades
