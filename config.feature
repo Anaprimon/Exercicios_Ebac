@@ -42,3 +42,9 @@ Cenário: Botão limpar deve retornar ao estado original
 Dado que o cliente esteja na página de configuração do produto
 Quando selecionar a cor "Blue", o tamanho "M", a quantidade "2" e clicar no botão "Limpar"
 Então as configurtações devem voltar ao estado original 
+
+
+Cenário: Configurar o produto
+Quando eu escolher o tamanho, a cor e a quantidade do produto dentro limite de até 10 unidades
+E clicar na opção Comprar
+Então deve exibir uma mensagem de confirmação "Produto adicionado ao carrinho com sucesso"
