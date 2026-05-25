@@ -52,3 +52,9 @@ Cenário: Configurar o produto
 Quando eu escolher o tamanho, a cor e a quantidade do produto dentro limite de até 10 unidades
 E clicar na opção Comprar
 Então deve exibir uma mensagem de confirmação "Produto adicionado ao carrinho com sucesso"
+
+Esquema do Cenário: Validação do cadastro no checkout
+Dado que estou na tela de cadastro
+Quando insiro o nome <nome>, o e-mail <email>, o endereço <endereco> e o telefone <telefone>
+Então o sistema deve exibir <mensagem>
+
