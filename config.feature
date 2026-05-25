@@ -58,3 +58,8 @@ Dado que estou na tela de cadastro
 Quando insiro o nome <nome>, o e-mail <email>, o endereço <endereco> e o telefone <telefone>
 Então o sistema deve exibir <mensagem>
 
+
+Cenário: Botão limpar restaura estado original
+Dado que estou na página de um produto
+Quando eu seleciono a cor "Preto", o tamanho "P", a quantidade "5" e clico em "Limpar"
+Então as configurações devem voltar ao estado original
