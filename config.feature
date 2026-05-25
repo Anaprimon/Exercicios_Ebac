@@ -63,3 +63,9 @@ Cenário: Botão limpar restaura estado original
 Dado que estou na página de um produto
 Quando eu seleciono a cor "Preto", o tamanho "P", a quantidade "5" e clico em "Limpar"
 Então as configurações devem voltar ao estado original
+
+
+Cenário: Cadastro com todos os dados obrigatórios preenchidos
+Dado que estou na página de cadastro
+Quando eu preencho todos os campos obrigatórios marcados com asterisco e clico em "Cadastrar"
+Então meu cadastro deve ser realizado com sucesso e devo ser direcionado para a tela de finalização
