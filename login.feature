@@ -112,6 +112,11 @@ Cenário: Login com usuário incorreto
 Quando inserir username incorreto epassword correto
 Então de ser exibido a mensagem "Usuário ou senha inválidos"
 
+Cenário: Login válido
+Quando inserir username correto
+E password correto
+Então deve ser direcionado para tela de checkout
+
 Cenário: Login com todos os campos inválidos
 Quando inserir username e password incorretos
 Então deve ser exibido a mensagem "Usuário ou senha inválidos"
