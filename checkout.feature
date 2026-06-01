@@ -28,3 +28,13 @@ Exemplos:
 | Theodoro | Fonseca   | Portugal | Rua do Sol, 789        | Lisboa    | 54321-987 | (21) 99876-5432 | f.theo@gmail.com        |
 
 
+Esquema do Cenário: Validar campos obrigatórios preenchidos
+Quando eu preencher o campo <nome>, <sobrenome>, <email>
+E clicar no botão "Cadastrar"
+Então o sistema deve exibir uma <mensagem> 
+Exemplos:
+| nome  | sobrenome | email          |
+| Thais | Oliveira  | thais@ebac.com | Cadastro realizado com sucesso
+|       |  Santos   | joao@ebac.com  | Verificar campo obrigatório em branco
+| Maria |           | maria@ebac.com | Verificar campo obrigatório em branco
+| Thais | Oliveira  | thaisemail.com | Verificar formato de eamil
