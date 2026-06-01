@@ -16,6 +16,11 @@ Cenário: Campos obrigatórios sem preecher
 Quando deixo de preencher algum campo obrigatório marcado com asterisco
 Então o sistema deve exibir a mensagem "Peencha todos os campos obrigatórios"
 
+Cenário: Validar campos obrigatórios vazios
+Quando eu deixar qualquer campo obrigatório vazio
+E clicar no botão "Cadastrar"
+Então deve ser exibida a mensagem de alerta "Campo obrigatório"
+
 
 Esquema do Cenário: Cadastro com dados válidos
 Quando eu inserir o <nome>, <sobrenome>, <Pais>, <endereco>, <cidade>, <cep>, <telefone> e <email>
@@ -39,7 +44,3 @@ Exemplos:
 | Maria |           | maria@ebac.com | Verificar campo obrigatório em branco
 | Thais | Oliveira  | thaisemail.com | Verificar formato de eamil
 
-Cenário: Validar campos obrigatórios vazios
-Quando eu deixar qualquer campo obrigatório vazio
-E clicar no botão "Cadastrar"
-Então deve ser exibida a mensagem de alerta "Campo obrigatório"
