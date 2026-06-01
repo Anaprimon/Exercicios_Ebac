@@ -38,3 +38,8 @@ Exemplos:
 |       |  Santos   | joao@ebac.com  | Verificar campo obrigatório em branco
 | Maria |           | maria@ebac.com | Verificar campo obrigatório em branco
 | Thais | Oliveira  | thaisemail.com | Verificar formato de eamil
+
+Cenário: Validar campos obrigatórios vazios
+Quando eu deixar qualquer campo obrigatório vazio
+E clicar no botão "Cadastrar"
+Então deve ser exibida a mensagem de alerta "Campo obrigatório"
