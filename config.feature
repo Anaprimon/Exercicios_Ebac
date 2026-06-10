@@ -69,3 +69,15 @@ Cenário: Cadastro com todos os dados obrigatórios preenchidos
 Dado que estou na página de cadastro
 Quando eu preencho todos os campos obrigatórios marcados com asterisco e clico em "Cadastrar"
 Então meu cadastro deve ser realizado com sucesso e devo ser direcionado para a tela de finalização
+
+Cenário: Configurar o produto e inserir no carrinho
+Dado que estou na página do produto "Augusta Pullover Jacket"
+Quando eu selecionar o tamanho "M", a cor "Blue", a quantidade "2"
+E clicar em "Adicionar ao Carrinho"
+Então o produto deve ser adicionado ao carrinho com as configurações selecionadas
+
+Cenário: Configurar o produto e inserir no carrinho
+Dado que estou na página do produto "Augusta Pullover Jacket"
+Quando eu selecionar o tamanho "M", a cor "Blue", a quantidade "2" e clicar em "Adicionar ao Carrinho"
+Então o produto deve ser adicionado ao carrinho com as configurações selecionadas
+
