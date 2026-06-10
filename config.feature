@@ -81,3 +81,15 @@ Dado que estou na página do produto "Augusta Pullover Jacket"
 Quando eu selecionar o tamanho "M", a cor "Blue", a quantidade "2" e clicar em "Adicionar ao Carrinho"
 Então o produto deve ser adicionado ao carrinho com as configurações selecionadas
 
+
+Esquema do Cenário: Seleção de produtos
+Quando eu selecionar <tamanho>, <quantidade> e <cor>
+Então o sistema deve exibir uma <mensagem> 
+Exemplos:
+|tamanho  | quantidade |  cor   | mensagem
+|   M     |    1       | verde  | Produto adicionado ao carrinho
+|   G     |    2       |        | "Selecione uma cor"
+etc
+etc
+etc...
+
