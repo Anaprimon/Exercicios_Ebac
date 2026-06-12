@@ -121,3 +121,14 @@ Cenário: Login com todos os campos inválidos
 Quando inserir username e password incorretos
 Então deve ser exibido a mensagem "Usuário ou senha inválidos"
 
+Esquema do Cenário: Tentariva de Login
+Quando inserir <username> ou <password>
+Então deve ser exibida a mensagem <mensagem>
+Exemplos:
+| username         | password   | mensagem                   |
+| maria@email.com  | erro@123   | Usuário ou senha inválidos |
+| maria.email      | valido@123 | Usuário ou senha inválidos |
+| maria.email      | erro@123   | Usuário ou senha inválidos |
+| maria@email.com  | valido@123 | Bem vinda, Maria!          |
+
+
