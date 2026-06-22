@@ -93,3 +93,17 @@ etc
 etc
 etc...
 
+Esquema do Cenário: Validar a compra dos produtos
+Quando seleciono a <cor>, <tamanho> e <quantidade>
+E clico em "Inserir no carrinho"
+Então o sistema deve exibir a <mensagem>
+
+Exemplos:
+| cor      | tamanho | quantidade | mensagem
+| Azul     | P       | 1          | "Produto adicionado com sucesso"
+| Vermelho |         | 3          | "Por favor, selecione o tamanho"
+|          | G       | 5          | "Por favor, selecione uma cor"
+| Branco   | GG      |            | "Por favor, selecione a quantidade"
+| Verde    | M       | 12         | "Quantidade de produtos excedido"
+
+
