@@ -76,7 +76,10 @@ Quando eu selecionar o tamanho "M", a cor "Blue", a quantidade "2"
 E clicar em "Adicionar ao Carrinho"
 Então o produto deve ser adicionado ao carrinho com as configurações selecionadas
 
-
+Cenário: Limpar configurações do produto
+Quando selecionar a cor "Preto", o tamanho "G" e a quantidade "3"
+E clicar no botão "Limpar"
+Então todos os campos devem retornar ao estado original
 
 Esquema do Cenário: Validar a compra dos produtos
 Quando seleciono a <cor>, <tamanho> e <quantidade>
