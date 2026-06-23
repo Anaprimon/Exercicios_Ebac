@@ -21,6 +21,10 @@ Quando eu deixar qualquer campo obrigatório vazio
 E clicar no botão "Cadastrar"
 Então deve ser exibida a mensagem de alerta "Campo obrigatório"
 
+Cenário: Cadastro com dados obrigatórios preenchidos
+Dado que estou na página de cadastro
+Quando preencher todos os campos obrigatórios e clicar em finalizar cadastro
+Então o cadastro deve ser realizado com sucesso
 
 
 Esquema do Cenário: Cadastro de usuário
