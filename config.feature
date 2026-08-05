@@ -84,7 +84,7 @@ Então todos os campos devem retornar ao estado original
 
 Esquema do Cenário: Validar seleção de produtos
 Quando selecionar a cor <cor>, tamanho <tamanho> e quantidade <quantidade> e clicar em "Adicionar ao carrinho"
-Então o sistema deve exibir a <mensagem>
+Então o sistema deve exibir a mensagem <mensagem>
 
 Exemplos:
 | cor     | tamanho  | quantidade |      mensagem                    |
