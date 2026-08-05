@@ -108,3 +108,5 @@ Exemplos:
 | Azul    |   M      |            | "Selecione a quantidade"         |
 |         |          |            | "Selecione o produto"            |
 
+
+Cenário: 
