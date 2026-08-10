@@ -5,18 +5,19 @@ Como cliente Ebac-shop
 Quero realizar meu Cadastro
 Para finalizar minhas compras
 
-Contexto: 
-Dado que estou na página de cadastro
 
 Cenário: Validação de campos obrigatórios
+Dado que estou na página de cadastro
 Quando prencher todos os campos marcados com asterisco e clicar em "Cadastrar"
 Então o sistema deve exibir a mensagem "Cadastro realizado com sucesso"
 
 Cenário: Campos obrigatórios sem preecher
+Dado que estou na página de cadastro
 Quando deixo de preencher algum campo obrigatório marcado com asterisco
 Então o sistema deve exibir a mensagem "Peencha todos os campos obrigatórios"
 
 Cenário: Validar campos obrigatórios vazios
+Dado que estou na página de cadastro
 Quando eu deixar qualquer campo obrigatório vazio
 E clicar no botão "Cadastrar"
 Então deve ser exibida a mensagem de alerta "Campo obrigatório"
