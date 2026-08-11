@@ -37,6 +37,10 @@ Quando eu selecionar a cor, o tamanho e a quantidade desejada do produto
 E clicar no botão "Comprar"
 Então o produto deve ser adicionado ao carrinho
 
+Cenário: O usuário pode configurar o produto e adicioná-lo ao carrinho
+Quando selecionar uma cor, um tamanho, uma quantidade 
+E adicionar o produto ao carrinho
+Então o produto deve ser adicionado com sucesso
 
 Cenário: Botão limpar deve retornar ao estado original
 Dado que o cliente esteja na página de configuração do produto
@@ -80,6 +84,22 @@ Cenário: Limpar configurações do produto
 Quando selecionar a cor "Preto", o tamanho "G" e a quantidade "3"
 E clicar no botão "Limpar"
 Então todos os campos devem retornar ao estado original
+
+
+
+Cenário: Adicionar produtos ao carrinho
+Dado que eu acesse a loja ebac para adicionar um produto ao carrinho
+Quando eu selecionar a cor, tamanho e quantidade e clicar em "Adicionar ao carrinho"
+Então deve exibir a mensagem "Produto adicionado com sucesso"
+
+Cenário: Validar seleção de produtos
+Dado que eu acesse a loja ebac para adicionar um produto ao carrinho
+Quando eu deixar de selecionar a cor, tamanho ou a quantidade
+Então deve exibir a mensagem "Para adicionar um produto selecione a cor, tamanho e quantidade" e bloquear a ação
+
+
+
+
 
 
 Esquema do Cenário: Validar seleção de produtos
