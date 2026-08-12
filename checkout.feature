@@ -22,6 +22,17 @@ Quando eu deixar qualquer campo obrigatório vazio
 E clicar no botão "Cadastrar"
 Então deve ser exibida a mensagem de alerta "Campo obrigatório"
 
+
+Given I am on the checkout page
+
+Scenario Outline: User can log in with different valid credentials
+Given I am on the checkout page
+When I have entered a valid first name <first_name>, email address <email_address>, and password <password>
+And click on the "Login" button
+Then I should be redirected to the checkout page
+
+
+
 Cenário: Cadastro com dados obrigatórios preenchidos
 Dado que estou na página de cadastro
 Quando preencher todos os campos obrigatórios e clicar em finalizar cadastro
