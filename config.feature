@@ -99,6 +99,10 @@ Então deve exibir a mensagem "Para adicionar um produto selecione a cor, tamanh
 
 
 
+Cenario: Validar seleções obrigatórias
+Dado que estou na página de um produto
+Quando deixar de selecionar a cor, o tamanho e a quantidade e clicar em "Adicionar ao carrinho"
+Então o sistema deve impedir a ação e exibir uma mensagem informando que esses campos são obrigatorios
 
 
 
