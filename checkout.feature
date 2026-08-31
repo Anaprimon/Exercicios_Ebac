@@ -33,6 +33,20 @@ Then I should be redirected to the checkout page
 
 
 
+Esquema do Cenário: Realizar cadastro dom dados validos
+Dado que estou na página de cadastro da EBAC-SHOP
+Quando preencher os campos com nome <nome>, sobrenome <sobrenome>, telefone <telefone> e e-mail <email>
+E clicar no botão "Cadastrar"
+Então o cadastro deve ser realizado com sucesso e devo conseguir finalizar a compra
+Exemplos:
+| nome    | sobrenome | telefone      | email             |
+| "João"  | "Silva"   | "81999999999" | "joao@email.com"  |
+| "Maria" | "Santos"  | "81988888888" | "maria@email.com" |
+
+
+
+
+
 Cenário: Cadastro com dados obrigatórios preenchidos
 Dado que estou na página de cadastro
 Quando preencher todos os campos obrigatórios e clicar em finalizar cadastro
