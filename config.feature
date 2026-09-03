@@ -14,6 +14,18 @@ Quando selecionar a cor "verde", tamanho "M", quantidade "2" e clicar em "Adicio
 Então o sistema deve exibir a mensagem "Produto adicionado ao carrinho"
 
 
+Cenário: Tentar comprar sem definir uma quantidade válida
+Quando eu selecionar o tamanho "L", a cor "Red", a quantidade 0 e clicar no botão "Comprar"
+Então devo ver uma mensagem informando que a "quantidade" é obrigatória e o produto não deve ser adicionado ao carrinho
+
+
+Cenário: Tentar comprar sem definir uma quantidade válida
+Quando eu selecionar o tamanho "L", a cor "Red", a quantidade como 0
+E clicar no botão "Comprar"
+Então devo ver uma mensagem informando que a "quantidade" é obrigatória
+E o produto não deve ser adicionado ao carrinho
+
+
 Cenário: Limpar produtos selecionados
 Quando selecionar a cor, o tamanho e a quantidade do produto
 E clicar no botão "Limpar" na página de seleção de produtos
