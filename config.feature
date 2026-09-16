@@ -32,6 +32,19 @@ Então o produto deve ser adicionado ao carrinho com sucesso
 
 
 
+Cenário: Restaurar estado original do produto
+Quando selecionar o tamanho "XL", a cor "Red" e a quantidade "5" e clicar no botão "Limpar"
+Então todas as seleções de tamanho, cor e quantidade devem retornar ao estado original padrão
+
+Cenário: Restaurar estado original do produto
+Quando selecionar o tamanho "XL", a cor "Red" e a quantidade "5"
+E clicar no botão "Limpar"
+Então todas as seleções de tamanho, cor e quantidade devem retornar ao estado original padrão
+
+
+
+
+
 Cenário: Tentar comprar sem definir uma quantidade válida
 Quando eu selecionar o tamanho "L", a cor "Red", a quantidade como 0
 E clicar no botão "Comprar"
