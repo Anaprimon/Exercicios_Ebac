@@ -19,6 +19,19 @@ Quando eu selecionar o tamanho "L", a cor "Red", a quantidade 0 e clicar no bot�
 Então devo ver uma mensagem informando que a "quantidade" é obrigatória e o produto não deve ser adicionado ao carrinho
 
 
+Cenário: Configuração válida e inserção no carrinho
+Quando eu selecionar o tamanho "S", a cor "Orange", a quantidade em "2" e clicar no botão "COMPRAR"
+Então o produto deve ser adicionado ao carrinho com sucesso
+
+
+Cenário: Configuração válida e inserção no carrinho
+Quando eu selecionar o tamanho "S", a cor "Orange", a quantidade em "2"
+E clicar no botão "COMPRAR"
+Então o produto deve ser adicionado ao carrinho com sucesso
+
+
+
+
 Cenário: Tentar comprar sem definir uma quantidade válida
 Quando eu selecionar o tamanho "L", a cor "Red", a quantidade como 0
 E clicar no botão "Comprar"
