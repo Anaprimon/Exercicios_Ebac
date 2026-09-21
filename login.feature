@@ -91,6 +91,23 @@ Então o produto deve ser adicionado ao carrinho
 
 
 
+Esquema do Cenário: Sistema impede cadastro com e-mail em formato inválido
+Quando o cliente preencher o campo E-mail com <email_invalido> e clicar em "Finalizar compra"
+Então o sistema deve exibir a mensagem <mensagem_erro> e o cadastro não deve ser concluído.
+
+Exemplos:
+| email_invalido        | mensagem_erro                          |
+| jose.ernesto@         | Informe um e-mail em um formato válido |
+| jose.ernesto.com      | Informe um e-mail em um formato válido |
+| jose ernesto@mail.com | Informe um e-mail em um formato válido |
+| @email.com            | Informe um e-mail em um formato válido |
+
+
+
+
+
+
+
 Funcionalidade: Login na Plataforma
 
 Como cliente da EBAC-SHOP
