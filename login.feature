@@ -7,6 +7,16 @@ Quero fazer o login (autenticação) na plataforma
 Para visualizar meus pedidos
 
 Contexto: Dado que estou na tela de Login
+
+
+
+Funcionalidade: Login na plataforma EBAC-SHOP
+
+Como cliente da EBAC-SHOP
+Quero fazer o login (autenticação) na plataforma
+Para visualizar meus pedidos
+
+
             
 Cenário: Deve direcionar para a tela de checkout ao inserir dados válidos
 Quando eu informo um e-mail válido "cliente@ebac.com"
