@@ -17,6 +17,16 @@ Quero fazer o login (autenticação) na plataforma
 Para visualizar meus pedidos
 
 
+
+Esquema do Cenário: Validar diferentes combinações de login
+Quando informo o usuário <usuario>
+E informo a senha <senha>
+E clico no botão de login
+Então o resultado do login deve ser <resultado>
+
+
+
+
             
 Cenário: Deve direcionar para a tela de checkout ao inserir dados válidos
 Quando eu informo um e-mail válido "cliente@ebac.com"
