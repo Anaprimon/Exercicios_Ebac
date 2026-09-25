@@ -27,6 +27,17 @@ Então o resultado do login deve ser <resultado>
 
 
 
+
+Cenário: Validação do preenchimento do cadastro
+Dado que estou na página de cadastro da EBAC-SHOP
+Quando preencho os campos "Nome*", "E-mail*", "Senha*" e clico em "Concluir cadastro"
+Então o sistema exibirá a mensagem "Cadastro concluido com sucesso"
+
+
+
+
+
+
             
 Cenário: Deve direcionar para a tela de checkout ao inserir dados válidos
 Quando eu informo um e-mail válido "cliente@ebac.com"
