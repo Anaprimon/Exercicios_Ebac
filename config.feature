@@ -9,6 +9,21 @@ Para finalizar minha compra
 Contexto: 
 Dado que estou na página do produto
 
+
+
+Cenário: Configurar produto com cor, tamanho e quantidade
+Quando o cliente selecionar a cor, o tamanho, a quantidade e clicar no botão de adicionar ao carrinho
+Então o produto deve ser adicionado ao carrinho
+
+
+Cenário: Configurar produto com cor, tamanho e quantidade
+Quando o cliente selecionar uma cor, um tamanho e a quantidade desejada
+E clicar no botão de adicionar ao carrinho
+Então o produto deve ser adicionado ao carrinho
+
+
+
+
 Cenário: Seleção do produto
 Quando selecionar a cor "verde", tamanho "M", quantidade "2" e clicar em "Adicionar ao carrinho"
 Então o sistema deve exibir a mensagem "Produto adicionado ao carrinho"
