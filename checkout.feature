@@ -7,9 +7,9 @@ Para finalizar minhas compras
 
 
 
-Esquema do Cenario: Concluir cadastro com dados validos
+Esquema do Cenário: Concluir cadastro com dados validos
 Quando preencher todos os campos obrigatórios com dados válidos, informar o email <email> e clicar em "Concluir cadastro"
-Entao o cadastro deve ser concluido e aparecer a mensagem <mensagem>
+Então o cadastro deve ser concluido e aparecer a mensagem <mensagem>
 
 
 
