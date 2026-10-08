@@ -6,6 +6,13 @@ Quero realizar meu Cadastro
 Para finalizar minhas compras
 
 
+Esquema do Cenario: Validar restriçao de email com formato invalido
+Quando eu preencher os dados obrigatorios e informar o campo email com o valor <email_invalido>
+E clicar no botao "Finalizar compra"
+Então o sistema nao deve permitir o cadastro e exibir uma mensagem de erro indicando o motivo
+
+
+
 Cenário: Validação de campos obrigatórios
 Dado que estou na página de cadastro
 Quando prencher todos os campos marcados com asterisco e clicar em "Cadastrar"
