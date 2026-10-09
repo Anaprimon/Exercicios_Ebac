@@ -39,9 +39,11 @@ Então o sistema deve exibir a mensagem "Peencha todos os campos obrigatórios"
 
 Cenário: Validar campos obrigatórios vazios
 Dado que estou na página de cadastro
-Quando eu deixar qualquer campo obrigatório vazio
-E clicar no botão "Cadastrar"
-Então deve ser exibida a mensagem de alerta "Campo obrigatório"
+Quando eu deixar de preencher qualquer campo obrigatório e clicar no botão "Cadastrar"
+Então deve ser exibida a mensagem de alerta "Campo obrigatório vazio"
+
+
+
 
 
 Given I am on the checkout page
