@@ -75,20 +75,20 @@ Então o cadastro deve ser realizado com sucesso
 
 
 Esquema do Cenário: Cadastro de usuário
-Quando eu preencher os campos com <nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <cep>, <telefone> e <email>
+Quando eu deixar de preencher algum dos campos obrigatórios com <nome>, <sobrenome>, <pais>, <endereco>, <cidade>, <cep>, <telefone> e <email>
 E clicar em "Finalizar compra"
-Então deve exibir a mensagem <mensagem>
+Então deve exibir a <mensagem> 
 
 Exemplos:
-| nome    | sobrenome | pais   | endereco            | cidade     | cep      | telefone    | email             | mensagem                        |
-|         | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório"             |
-| Patrick |           | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório"             |
-| Patrick | Venturini |        | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório"             |
-| Patrick | Venturini | Brasil |                     | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório"             |
-| Patrick | Venturini | Brasil | Rua das Laranjeiras |            | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório"             |
-| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha |          | 27999999999 | patrick@teste.com | "Campo obrigatório"             |
-| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 |             | patrick@teste.com | "Campo obrigatório"             |
-| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 |                   | "Campo obrigatório"             |
-|         |           |        |                     |            |          |             |                   | "Campo obrigatório"             |
-| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrickteste.com  | "E-mail inválido"               |
-| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Cadastro realizado com sucesso"|
+| nome    | sobrenome | pais   | endereco            | cidade     | cep      | telefone    | email             | mensagem                  |
+|         | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório vazio" |
+| Patrick |           | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório vazio" |
+| Patrick | Venturini |        | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório vazio" |
+| Patrick | Venturini | Brasil |                     | Vila Velha | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório vazio" |
+| Patrick | Venturini | Brasil | Rua das Laranjeiras |            | 29108031 | 27999999999 | patrick@teste.com | "Campo obrigatório vazio" |
+| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha |          | 27999999999 | patrick@teste.com | "Campo obrigatório vazio" |
+| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 |             | patrick@teste.com | "Campo obrigatório vazio" |
+| Patrick | Venturini | Brasil | Rua das Laranjeiras | Vila Velha | 29108031 | 27999999999 |                   | "Campo obrigatório vazio" |
+|         |           |        |                     |            |          |             |                   | "Campo obrigatório vazio" |
+
+
