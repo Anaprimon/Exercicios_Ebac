@@ -11,6 +11,23 @@ Dado que estou na página do produto
 
 
 
+Esquema do Cenário: Respeitar o limite de 10 produtos por pedido
+Dado que a cor e o tamanho do produto já estejam selecionados
+Quando informo a quantidade "<quantidade>" e clico em "Adicionar ao Carrinho"
+Então o sistema deve exibir a mensagem "<mensagem>"
+
+Exemplos:
+| quantidade | mensagem                                                   |
+| 11         | "A quantidade máxima permitida é de 10 itens por pedido."  |
+| 15         | "A quantidade máxima permitida é de 10 itens por pedido."  |
+| 2          | "Quantidade aceita."                                       |
+| 5          | "Quantidade aceita."                                       |
+
+
+
+
+
+
 Cenário: Configurar produto com cor, tamanho e quantidade
 Quando o cliente selecionar a cor, o tamanho, a quantidade e clicar no botão de adicionar ao carrinho
 Então o produto deve ser adicionado ao carrinho
