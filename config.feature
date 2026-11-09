@@ -7,7 +7,14 @@ Quero escolher meu produto
 Para finalizar minha compra
 
 Contexto: 
-Dado que estou na página do produto
+Dado que estou na página de configuração do produto
+
+
+cenario: alterar nome do usuario 
+dado que eu estou na tela de configuracoes 
+quando eu informa a senha atual 'euclides'
+e eu clicar em 'salvar'
+entao deve exibir uma mesagem de sucesso 'configuracoes salvas'
 
 
 
